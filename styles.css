@@ -1,0 +1,346 @@
+*, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(243, 239, 239);
+}
+.alert {
+    background-color: rgb(185, 173, 120);
+    color: white;
+    text-align: center;
+    padding: 8px;
+    margin-bottom: 0
+}
+.alert a {
+    color: white
+}
+/* Section 1 */
+#main1 {
+    height: 75vh;
+    background-image: url(/images/caleb-woods-qrMLvb60_rg-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 25%;
+    color: rgb(187, 179, 179)
+}
+.header  {
+    border-bottom: 1px solid rgb(187, 179, 179);
+    padding: .8rem;
+    position: sticky
+}
+.header, .header ul, .icons, .button-container {
+    display: flex;
+}
+.header ul {
+    margin-left: 4rem;
+    margin-top: .5rem;
+}
+.header ul li {
+    list-style: none;
+    margin-right: 2.5rem
+}
+.header ul li a {
+    text-decoration: none;
+    color: grey
+}
+.header:hover {
+    background-color: black
+}
+.logo i {
+    font-size: 2rem !important;
+    margin-left: 1.5rem
+}
+.icons, .searchbar {
+    margin-right: 1.5rem
+}
+.icons i {
+    font-size: 1.5rem;
+    margin-right: .5rem
+}
+.searchbar {
+    margin-left: auto;
+    font-size: 1.5rem
+}
+.title {
+    padding-right: 8%;
+    margin-top: 10%;
+    text-transform: uppercase;
+    text-align: right;
+}
+.title h1 {
+    font-size: 3rem;
+    color: grey
+}
+.title h5 {
+    color: grey;
+    font-size: 1.2rem
+}
+.button-container {
+    margin-left: 75%;
+    margin-top: .6%
+}
+button {
+    padding: 4%;
+    font-weight: 700;
+    margin-left: 1rem;
+    background-color: white;
+    border: none
+}
+.searchbar {
+    border: 2px solid #DDD;
+    padding: 2px;
+    background-color: transparent
+}
+.searchbar i {
+margin: 5px 10px;
+font-size: 1.2rem
+}
+input {
+    border: none;
+    font-size: 1.2rem;
+    background-color: transparent;
+}
+input:focus {
+    border: none
+}
+/* 2nd section */
+
+#main2, #main4 {
+    padding: 0 10vw
+}
+
+#main2 h1, #main4 h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 2%
+}
+.look-container {
+    display: flex;
+    margin-bottom: 3%
+}
+.look-item {
+    text-align: center;
+    margin-right: 1rem
+}
+.look-image-container {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 8%
+}
+.look-image-container img {
+    width: 100%;
+    height: 100%;
+}
+.look-item h3 {
+    margin-top: 5%;
+    font-weight: 200
+}
+.look-item h2 {
+    font-weight: bolder;
+    margin-top: 2px
+}
+/* 3rd Section */
+#main3 {
+    display: flex;
+    height: 70vh
+}
+.main3-content {
+    width: 35%;
+    background-color: black;
+    color: white;
+    padding: 0 4%;
+    text-align: center;
+}
+.main3-content h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-top: 30%
+}
+.main3-content h5 {
+    font-size: 1.7rem;
+    font-weight: 100;
+    margin-top: 2%
+}
+.main3-content button {
+    margin-top: 4%;
+    font-size: .9rem;
+    text-transform: uppercase;
+    border: none
+}
+.main3-image {
+    width: 65%;
+    background-image: url(/images/jakob-owens-Np_nvRuhpUo-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* main5 */
+#main5 {
+    padding: 0 2%
+}
+.main5-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+.main5-item {
+    flex: auto
+}
+.main5-item-image {
+ height: 250px
+}
+.main5-item-image img {
+    width: 100%;
+    height: 100%
+}
+.main5-item h2, .main5-item p {
+    text-align: center;
+    text-transform: uppercase;
+}
+.main5-item h2 {
+    margin-top: 2rem
+}
+.main5-item p {
+    margin-top: 5px
+}
+.main5-item button {
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    padding: 3%;
+    margin-top: 1.5%;
+    margin-left: 6rem;
+    border: none
+}
+#main6 {
+    height: 75vh;
+    background-image: url(/images/kelly-sikkema--YYSC6kwPF8-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 25%;
+    color: rgb(187, 179, 179);
+    margin: 2% 0;
+    padding-top: 10%
+}
+.main6-content {
+    width: 30%;
+    margin-left: auto;
+    color:black;
+    padding-right: 5%
+
+}
+.main6-content h1 {
+    font-size:  2.5rem;
+    text-transform: uppercase;
+}
+.main6-content h6 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-left: 2rem;
+}
+.main6-content button {
+    margin-top: 2%;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    border: none
+}
+/* 7th section */
+#main7 {
+    text-align: center;
+    margin-bottom: 1%;
+}
+#main7 h1 {
+    text-transform: uppercase;;
+    color: grey
+}
+.main7-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin: 0 5%;
+    grid-gap: 2%
+}
+#main7 h5 {
+    font-size: 1.1rem;
+    margin: .5rem 0
+}
+#main7 p {
+    margin: .2rem 0
+}
+.main7-item img {
+    height: 100%;
+    width: 100%
+}
+/* 8th section */
+#main8 {
+    display: flex;
+    height: 100vh;
+    background-color: black;
+    padding: 2% 4%;
+}
+.main8-1 {
+    width: 75%;
+    color: white;
+    padding: 4%
+}
+.logo-footer {
+    margin-top: 7%;
+    margin-left: -1.5rem
+}
+.main8-2 {
+    width: 25%;
+    color: white;
+    padding-top: 5%
+}
+.horizontal-lines {
+    display: flex;
+    margin-top: 9%;
+}
+.horizontal-line {
+    height: 2px;
+    width: 45%;
+    background-color: white;
+    margin-right: 8px;
+}
+.links-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 2rem
+}
+.links-container > div:nth-child(even) {
+    margin-top: 11%
+}
+.links-items h4 {
+    margin-bottom: .5rem
+}
+.links-items ul li {
+    list-style: none;
+    margin-top: .6rem
+}
+.links-items ul li a {
+    text-decoration: none;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9rem
+}
+.links-items ul li a:hover {
+    color: white
+}
+.main8-2 h4 {
+    margin-top: 11%
+}
+.main8-2 input {
+    margin: 5% 0 10%;
+    border: 2px solid white;
+    font-size: .8rem;
+    width: 100%;
+    padding: 4%
+}
+.icon-container {
+    font-size: 1.25rem;
+    margin-top: 6%
+}
+.icon-container i {
+    margin: 0 5%
+}
