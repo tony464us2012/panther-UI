@@ -22,6 +22,17 @@
                 <li><a href="#">Select</a></li>
                 <li><a href="#">Collections</a></li>
             </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+            <div class="topnav">
+                <div id="myLinks">
+                    <a href="#home" class="active">Logo</a>
+                    <a href="#news">News</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#about">About</a>
+                </div>
+            </div>
             <div class="searchbar"><i class="fas fa-search"></i><input type="text"></div>
             <div class="icons">
                 <i class="fas fa-shopping-cart"></i>
@@ -32,7 +43,7 @@
             <h1>Higher Power</h1>
             <h5>cara delevingne in rise</h5>
             <div class="button-container">
-                <button>Shop Rise</button>
+                <button class="first-button">Shop Rise</button>
                 <button>Shop Women's lifestyle</button>
             </div>
         </div>
@@ -241,5 +252,15 @@
             </div>
         </div>
     </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+                }
+        </script>
 </body>
 </html>

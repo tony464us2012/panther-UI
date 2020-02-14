@@ -5,12 +5,15 @@
 }
 body {
     background-color: rgb(243, 239, 239);
+    width: 100vw
+    
 }
 .alert {
     background-color: rgb(185, 173, 120);
     color: white;
     text-align: center;
-    padding: 8px;
+    font-size: 1rem;
+    padding: 10px 2px;
     margin-bottom: 0
 }
 .alert a {
@@ -18,54 +21,62 @@ body {
 }
 /* Section 1 */
 #main1 {
-    height: 75vh;
+    height: 70vh;
     background-image: url(/images/caleb-woods-qrMLvb60_rg-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 25%;
-    color: rgb(187, 179, 179)
+    color: white;
+    position: relative
 }
 .header  {
-    border-bottom: 1px solid rgb(187, 179, 179);
+    border-bottom: 3px solid rgb(187, 179, 179);
     padding: .8rem;
-    position: sticky
+    position: sticky;
+    background-color: black;
+    color: white
 }
 .header, .header ul, .icons, .button-container {
     display: flex;
 }
-.header ul {
-    margin-left: 4rem;
-    margin-top: .5rem;
+.header {
+    margin: 0
 }
 .header ul li {
     list-style: none;
-    margin-right: 2.5rem
+    margin-right: 1.5rem;
+    font-size: 1.1rem
 }
 .header ul li a {
     text-decoration: none;
-    color: grey
+    color: white
 }
-.header:hover {
-    background-color: black
+.logo {
+    margin-left: 4rem;
+    margin-right: 2rem
 }
 .logo i {
-    font-size: 2rem !important;
-    margin-left: 1.5rem
-}
-.icons, .searchbar {
+    font-size: 1.3rem !important;
     margin-right: 1.5rem
 }
+.icons, .searchbar {
+    margin-right: 1rem
+}
 .icons i {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     margin-right: .5rem
 }
 .searchbar {
-    margin-left: auto;
-    font-size: 1.5rem
+    display: flex;
+    font-size: .7rem;
+    margin-left: 35%;
+    height: 1.6rem;
+    width: 20%
 }
 .title {
-    padding-right: 8%;
-    margin-top: 10%;
+    position: absolute;
+    right: 8%;
+    margin-top: 12%;
     text-transform: uppercase;
     text-align: right;
 }
@@ -77,16 +88,17 @@ body {
     color: grey;
     font-size: 1.2rem
 }
-.button-container {
-    margin-left: 75%;
-    margin-top: .6%
-}
 button {
-    padding: 4%;
-    font-weight: 700;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
     background-color: white;
-    border: none
+    border: none;
+    padding: 12px;
+    margin-left: auto;
+    font-weight: 700;
+    margin-top: 1rem
+}
+.first-button {
+    margin-right: -4rem
 }
 .searchbar {
     border: 2px solid #DDD;
@@ -94,8 +106,8 @@ button {
     background-color: transparent
 }
 .searchbar i {
-margin: 5px 10px;
-font-size: 1.2rem
+    margin: 5px 10px;
+    font-size: .8rem
 }
 input {
     border: none;
@@ -119,7 +131,9 @@ input:focus {
 }
 .look-container {
     display: flex;
-    margin-bottom: 3%
+    margin-bottom: 3%;
+    width: 80vw;
+    justify-content: center;
 }
 .look-item {
     text-align: center;
@@ -210,9 +224,7 @@ input:focus {
     text-transform: uppercase;
     padding: 3%;
     margin-top: 1.5%;
-    margin-left: 6rem;
-    border: none
-}
+    border: none}
 #main6 {
     height: 75vh;
     background-image: url(/images/kelly-sikkema--YYSC6kwPF8-unsplash.jpg);
@@ -344,3 +356,230 @@ input:focus {
 .icon-container i {
     margin: 0 5%
 }
+
+@media (min-width: 2560px) {
+    .logo {
+        margin-left: 15rem
+    }
+    .searchbar {
+        width: 10%
+    }
+    .look-container {
+        border: 2px solid black
+    }
+    #main1, #main3, #main5, #main6, #main8 {
+        width: 88vw
+    } 
+    .look-container {
+        width: 70vw
+    }
+    .main3-content h1 {
+        margin-top: 60%
+    }
+    .main5-container {
+        padding: 0 20%
+    }
+    .main6-content h1 {
+        margin-top: 50%
+    }
+    .main7-container {
+        padding: 0 18%
+    }
+    #main8 {
+        height: 70vh
+    }
+}
+    @media (max-width: 1024px) {
+        .searchbar {
+            margin-left: 22%;
+        }
+        .alert p {
+            font-size: .8rem
+        }
+        .header ul li a, .icons i {
+            font-size: .9rem
+        }
+        .title {
+            width: 50%
+        }
+        .title h1, 
+        #main2 h1,
+        #main-content h1, 
+        #main4 h1, 
+        .main6-content h1 {
+            font-size: 2rem
+        }
+       .button-container button:first-child {
+            margin-right: 0;
+            margin-left: 14rem
+       }
+       .main3-content h1 {
+           font-size: 2rem;
+           margin-top: 20%
+       }
+       .main3-content h5 {
+           font-size: 1.5rem
+       }
+       .main3-content button {
+           font-size: 1rem
+       }
+       h2 {
+           font-size: 1.2rem
+       }
+       .main5-item {
+           margin-top: 2rem
+       }
+    }
+        @media (min-width: 769px) {
+            .icon, .topnav {
+                display: none
+            }
+        }
+
+        @media (max-width: 768px) {
+           
+           .logo, header ul {
+               margin: 0
+           }
+         
+        .look-image-container {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 8%
+        }
+        .button-container button, 
+        .main3-content button,
+        .main6-content button {
+            font-size: .8rem
+        }
+        .button-container button:first-child {
+            margin-right: .5rem;
+            margin-left: 5rem
+       }
+       #main7 {
+           margin-bottom: 1rem
+       }
+       #main8 {
+           display: block;
+           height: 120vh
+       }
+       .main8-1 {
+           width: 100%
+     }
+       .main8-2 {
+           width: 40%
+       }
+       .logo, .header ul {
+           display: none
+       }
+       .icon {
+           display: block;
+           color: white;
+           margin-left: 1rem;
+           margin-right: 1rem
+       }
+       .searchbar {
+           margin-left: auto
+       }
+        .topnav {
+            background-color: #333;
+            position: relative;
+        }
+        .topnav #myLinks {
+            display: none;
+        }
+        .topnav a {
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+            background-color: black
+        }
+        .topnav a.icon {
+            background: black;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .active {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .header {
+            height: 55px
+        }
+    }
+
+    @media (max-width: 425px) {
+        body {
+            width: 120vw
+        }
+        .look-container {
+            display: block
+        }
+        .searchbar {
+            margin-left: auto;
+            width: 10rem
+        }
+        .title {
+            width: 80%;
+            margin-top: 20%
+        }
+        .title h1, .title h5 {
+            text-align: center;
+        }
+        .look-item {
+            margin-top: 1rem;
+            padding: 2%;
+            width: 100vw
+        }
+        .look-image-container {
+            width: 70%;
+            margin: 0 15%;
+         object-fit: cover;
+        }
+        .main6-content {
+            width: 80%;
+            margin: 10%
+        }
+        #main7 {
+            margin-bottom: 3rem
+        }
+        #main8 {
+            padding-bottom: 2rem;
+            height: 130vh
+        }
+        .main8-2 {
+            width: 80%;
+            margin: 0 10%;
+        }
+    }
+
+    @media (max-width: 375px) {
+        #main7 {
+            margin-bottom: 12rem
+        }
+        .links-container {
+            display: block
+        }
+        .links-items {
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .links-container > div:nth-child(even) {
+            margin-top: 0
+        }
+
+        #main8 {
+            height: 180vh
+        }
+        .main8-2 {
+            margin-top: -2rem
+        }
+    }
