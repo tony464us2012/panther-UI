@@ -1,18 +1,17 @@
-*, body {
+ *, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    background-color:red;
-}
+    body {
+        background-color: red
+    }
 .alert {
     background-color: rgb(185, 173, 120);
     color: white;
     text-align: center;
     font-size: 1rem;
     padding: 10px 2px;
-    margin-bottom: 0
 }
 .alert a {
     color: white
@@ -127,7 +126,6 @@ input:focus {
 .look-container {
     display: flex;
     margin-bottom: 3%;
-    width: 80%;
     justify-content: center;
 }
 .look-item {
@@ -180,7 +178,7 @@ input:focus {
     border: none
 }
 .main3-image {
-    width: 60%;
+    width: 65%;
     background-image: url(/images/jakob-owens-Np_nvRuhpUo-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -197,7 +195,7 @@ input:focus {
     flex: auto
 }
 .main5-item-image {
- height: 250px
+ height: 350px
 }
 .main5-item-image img {
     width: 100%;
@@ -254,7 +252,7 @@ input:focus {
     border: none
 }
 /* 7th section */
-#main7 {
+#main7  {
     text-align: center;
     margin-bottom: 1%;
 }
@@ -265,8 +263,9 @@ input:focus {
 .main7-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    margin: 0 5%;
-    grid-gap: 2%
+    justify-content: space-evenly;
+    grid-gap: 2%;
+    padding: 0 10%
 }
 #main7 h5 {
     font-size: 1.1rem;
@@ -355,44 +354,44 @@ input:focus {
     .logo {
         margin-left: 15rem
     }
+    .title {
+        margin-right: 15%
+    }
+    .first-button {
+        margin-left: 85%
+    }
     .searchbar {
         width: 10%
-    }
-    .look-container {
-        border: 2px solid black
-    }
-    #main1, #main3, #main5, #main6, #main8 {
-        width: 88vw
-    } 
-    .look-container {
-        width: 70vw
     }
     .main3-content h1 {
         margin-top: 60%
     }
-    .main5-container {
-        padding: 0 20%
+    .main5-container, .main7-container {
+        padding: 0 25%
     }
     .main6-content h1 {
         margin-top: 50%
     }
-    .main7-container {
-        padding: 0 18%
-    }
     
 }
+
+    @media (max-width: 1440px) {
+        .title {
+            margin-right: 2rem
+        }
+        .first-button {
+            margin-left: 80%
+        }
+    }
     @media (max-width: 1024px) {
         .searchbar {
-            margin-left: 22%;
+            margin-left: auto;
         }
         .alert p {
             font-size: .8rem
         }
         .header ul li a, .icons i {
             font-size: .9rem
-        }
-        .title {
-            width: 50%
         }
         .title h1, 
         #main2 h1,
@@ -401,9 +400,9 @@ input:focus {
         .main6-content h1 {
             font-size: 2rem
         }
-       .button-container button:first-child {
+       .first-button {
             margin-right: 0;
-            margin-left: 14rem
+            margin-left: 70%
        }
        .main3-content h1 {
            font-size: 2rem;
@@ -420,6 +419,9 @@ input:focus {
        }
        .main5-item {
            margin-top: 2rem
+       }
+       #main7 {
+           margin-bottom: 1rem
        }
     }
         @media (min-width: 769px) {
@@ -454,6 +456,9 @@ input:focus {
        #main7 {
            margin-bottom: 1rem
        }
+       .main7-container {
+        padding: 0 10%
+    }
        #main8 {
            display: block;
        }
