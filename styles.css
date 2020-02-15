@@ -4,9 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: rgb(243, 239, 239);
-    width: 100vw
-    
+    background-color:red;
 }
 .alert {
     background-color: rgb(185, 173, 120);
@@ -32,7 +30,6 @@ body {
 .header  {
     border-bottom: 3px solid rgb(187, 179, 179);
     padding: .8rem;
-    position: sticky;
     background-color: black;
     color: white
 }
@@ -69,13 +66,11 @@ body {
 .searchbar {
     display: flex;
     font-size: .7rem;
-    margin-left: 35%;
+    margin-left: auto;
     height: 1.6rem;
     width: 20%
 }
 .title {
-    position: absolute;
-    right: 8%;
     margin-top: 12%;
     text-transform: uppercase;
     text-align: right;
@@ -120,7 +115,7 @@ input:focus {
 /* 2nd section */
 
 #main2, #main4 {
-    padding: 0 10vw
+    padding: 0 10%
 }
 
 #main2 h1, #main4 h1 {
@@ -132,7 +127,7 @@ input:focus {
 .look-container {
     display: flex;
     margin-bottom: 3%;
-    width: 80vw;
+    width: 80%;
     justify-content: center;
 }
 .look-item {
@@ -185,7 +180,7 @@ input:focus {
     border: none
 }
 .main3-image {
-    width: 65%;
+    width: 60%;
     background-image: url(/images/jakob-owens-Np_nvRuhpUo-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -287,7 +282,6 @@ input:focus {
 /* 8th section */
 #main8 {
     display: flex;
-    height: 100vh;
     background-color: black;
     padding: 2% 4%;
 }
@@ -385,9 +379,7 @@ input:focus {
     .main7-container {
         padding: 0 18%
     }
-    #main8 {
-        height: 70vh
-    }
+    
 }
     @media (max-width: 1024px) {
         .searchbar {
@@ -456,12 +448,14 @@ input:focus {
             margin-right: .5rem;
             margin-left: 5rem
        }
+       #main2, #main4 {
+        padding: 0 6%
+    }
        #main7 {
            margin-bottom: 1rem
        }
        #main8 {
            display: block;
-           height: 120vh
        }
        .main8-1 {
            width: 100%
@@ -517,19 +511,18 @@ input:focus {
     }
 
     @media (max-width: 425px) {
-        body {
-            width: 120vw
-        }
+        
         .look-container {
             display: block
         }
         .searchbar {
             margin-left: auto;
-            width: 10rem
+            width: 8rem
         }
         .title {
             width: 80%;
-            margin-top: 20%
+            margin-top: 20%;
+            margin-left: 10%;
         }
         .title h1, .title h5 {
             text-align: center;
@@ -537,33 +530,32 @@ input:focus {
         .look-item {
             margin-top: 1rem;
             padding: 2%;
-            width: 100vw
+            width: 100%;
         }
         .look-image-container {
             width: 70%;
             margin: 0 15%;
          object-fit: cover;
         }
+        .main3-content {
+            width: 40%
+        }
+        .main3-image {
+            width: 60%
+        }
         .main6-content {
             width: 80%;
             margin: 10%
         }
         #main7 {
-            margin-bottom: 3rem
+            margin-bottom: 11rem
         }
         #main8 {
             padding-bottom: 2rem;
-            height: 130vh
         }
         .main8-2 {
             width: 80%;
             margin: 0 10%;
-        }
-    }
-
-    @media (max-width: 375px) {
-        #main7 {
-            margin-bottom: 12rem
         }
         .links-container {
             display: block
@@ -575,11 +567,32 @@ input:focus {
         .links-container > div:nth-child(even) {
             margin-top: 0
         }
-
-        #main8 {
-            height: 180vh
+        .horizontal-lines > div:last-child {
+            display: none
         }
+        .horizontal-lines > div:nth-child(2) {
+            width: 100%
+        }
+    }
+
+    @media (max-width: 375px) {
+        #main7 {
+            margin-bottom: 10rem
+        }
+
         .main8-2 {
             margin-top: -2rem
         }
+    }
+
+    @media (max-width: 320px) {
+        .button-container button:first-child {
+            margin-left: 0
+        }
+        .main3-content {
+            width: 100%
+        }
+    .main3-image{
+        display: none
+    }
     }
