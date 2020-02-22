@@ -21,7 +21,8 @@
     background-repeat: no-repeat;
     background-position: 0 25%;
     color: white;
-    position: relative
+    position: relative;
+    overflow-y : hidden;
 }
 .header  {
     border-bottom: 3px solid rgb(187, 179, 179);
@@ -124,14 +125,16 @@ input:focus {
     display: flex;
     margin-bottom: 3%;
     justify-content: center;
+    flex-wrap: wrap
 }
 .look-item {
     text-align: center;
-    margin-right: 1rem
+    margin-right: 1rem;
+    margin-top: 1rem;
 }
 .look-image-container {
-    width: 250px;
-    height: 250px;
+    width: 175px;
+    height: 175px;
     margin-bottom: 8%
 }
 .look-image-container img {
@@ -186,13 +189,14 @@ input:focus {
 }
 .main5-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 0 10%
 }
 .main5-item {
     flex: auto
 }
 .main5-item-image {
- height: 350px
+ height: 300px
 }
 .main5-item-image img {
     width: 100%;
@@ -364,7 +368,7 @@ input:focus {
         margin-top: 60%
     }
     .main5-container, .main7-container {
-        padding: 0 25%
+        padding: 0 27%
     }
     .main6-content h1 {
         margin-top: 50%
@@ -397,10 +401,17 @@ input:focus {
         .main6-content h1 {
             font-size: 2rem
         }
+        .main5-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            grid-gap: 1rem;
+            padding: 0 10%
+        }
        .first-button {
             margin-right: 0;
             margin-left: 70%
        }
+
        .main3-content h1 {
            font-size: 2rem;
            margin-top: 20%
@@ -513,7 +524,14 @@ input:focus {
     }
 
     @media (max-width: 425px) {
-        
+        body {
+            width: 100%;
+            margin-right: 0;
+            overflow-x: hidden;
+        }
+        .button-container button {
+            font-size: .6rem
+        }
         .look-container {
             display: block
         }
@@ -540,10 +558,11 @@ input:focus {
          object-fit: cover;
         }
         .main3-content {
-            width: 40%
+            width: 50%;
+            padding-left: 2rem
         }
         .main3-image {
-            width: 60%
+            width: 50%
         }
         .main6-content {
             width: 80%;
