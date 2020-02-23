@@ -84,8 +84,7 @@ button {
     /* margin-left: 1rem; */
     background-color: white;
     border: none;
-    padding: 12px;
-    margin-left: auto;
+    padding: 7px;
     font-weight: 700;
     margin-top: 1rem
 }
@@ -374,6 +373,10 @@ input:focus {
         margin-top: 50%
     }
     
+    .button-container button:first-child {
+        margin-right: 4rem;
+   }
+    
 }
 
     @media (max-width: 1440px) {
@@ -383,6 +386,9 @@ input:focus {
         .first-button {
             margin-left: 80%
         }
+        .button-container button:first-child {
+            margin-right: 2rem;
+       }
     }
     @media (max-width: 1024px) {
         .searchbar {
@@ -455,8 +461,7 @@ input:focus {
             font-size: .8rem
         }
         .button-container button:first-child {
-            margin-right: .5rem;
-            margin-left: 5rem
+            margin-right: 1rem;
        }
        #main2, #main4 {
         padding: 0 6%
@@ -529,6 +534,9 @@ input:focus {
             margin-right: 0;
             overflow-x: hidden;
         }
+        .button-container button:first-child {
+            margin-left: 25%
+        }
         .button-container button {
             font-size: .6rem
         }
@@ -594,6 +602,9 @@ input:focus {
         .horizontal-lines > div:nth-child(2) {
             width: 100%
         }
+        .button-container button:first-child {
+            margin-right: 1rem;
+       }
     }
 
     @media (max-width: 375px) {
@@ -604,16 +615,16 @@ input:focus {
         .main8-2 {
             margin-top: -2rem
         }
-    }
-
-    @media (max-width: 320px) {
-        .button-container button:first-child {
-            margin-left: 0
-        }
         .main3-content {
             width: 100%
         }
     .main3-image{
         display: none
     }
+    }
+
+    @media (max-width: 320px) {
+        .button-container button:first-child {
+            margin-left: 0
+        }
     }
