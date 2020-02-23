@@ -534,6 +534,12 @@ input:focus {
             margin-right: 0;
             overflow-x: hidden;
         }
+        #main1 {
+            height: 55vh
+        }
+        #main2, #main4, #main7 {
+            padding-top: 2rem
+        }
         .button-container button:first-child {
             margin-left: 25%
         }
